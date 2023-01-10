@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pin Pad View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PinPad" id="Y6W-OH-hqX" customClass="PinPadViewController" customModule="Chartr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kBP-LW-b10">
+                                <rect key="frame" x="139" y="335" width="136" height="16"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTd-kh-eP7">
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.792156862745098" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="Afd-mI-UhZ"/>
+                                            <constraint firstAttribute="width" constant="16" id="jWX-W4-W84"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2t-0M-vgd">
+                                        <rect key="frame" x="24" y="0.0" width="16" height="16"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.792156862745098" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="KR4-sx-LaA"/>
+                                            <constraint firstAttribute="height" constant="16" id="cti-yu-36s"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulM-ii-J2Y">
+                                        <rect key="frame" x="48" y="0.0" width="16" height="16"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.792156862745098" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="NRZ-eJ-s8j"/>
+                                            <constraint firstAttribute="height" constant="16" id="a6a-qN-agD"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UD0-gl-4aB">
+                                        <rect key="frame" x="72" y="0.0" width="16" height="16"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.792156862745098" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="vR2-oM-l1z"/>
+                                            <constraint firstAttribute="width" constant="16" id="vbD-IC-CMk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYP-rq-GAY" userLabel="Pin5">
+                                        <rect key="frame" x="96" y="0.0" width="16" height="16"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.792156862745098" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="D2y-Gf-VsA"/>
+                                            <constraint firstAttribute="height" constant="16" id="rg1-AE-Yz3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFt-Vj-eM0" userLabel="Pin6">
+                                        <rect key="frame" x="120" y="0.0" width="16" height="16"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="KmY-R5-2Fv"/>
+                                            <constraint firstAttribute="width" constant="16" id="qQJ-GZ-9RW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0S-Oa-Xaf" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="287" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chartrColorIB" value="black"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A0S-Oa-Xaf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="0P0-it-BY2"/>
+                            <constraint firstItem="kBP-LW-b10" firstAttribute="top" secondItem="A0S-Oa-Xaf" secondAttribute="bottom" constant="26.5" id="JcZ-Y9-vXd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="A0S-Oa-Xaf" secondAttribute="trailing" constant="20" id="MjS-PE-vpM"/>
+                            <constraint firstItem="kBP-LW-b10" firstAttribute="centerX" secondItem="A0S-Oa-Xaf" secondAttribute="centerX" id="YJ5-RV-3PS"/>
+                            <constraint firstItem="A0S-Oa-Xaf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="243" id="g8s-hi-Q2u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterPinLabel" destination="A0S-Oa-Xaf" id="H1u-AJ-WPr"/>
+                        <outlet property="pin1" destination="lTd-kh-eP7" id="lI7-H5-AIN"/>
+                        <outlet property="pin2" destination="A2t-0M-vgd" id="MhX-3g-OTt"/>
+                        <outlet property="pin3" destination="ulM-ii-J2Y" id="uoM-wL-cA0"/>
+                        <outlet property="pin4" destination="UD0-gl-4aB" id="ayp-xr-il3"/>
+                        <outlet property="pin5" destination="PYP-rq-GAY" id="FXY-hm-b0f"/>
+                        <outlet property="pin6" destination="FFt-Vj-eM0" id="PpG-7g-hXl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="A0S-Oa-Xaf">
+            <size key="intrinsicContentSize" width="74" height="21.5"/>
+        </designable>
+    </designables>
+</document>

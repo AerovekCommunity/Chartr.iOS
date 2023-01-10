@@ -1,0 +1,50 @@
+PODS:
+  - BigInt (5.2.0)
+  - BrightFutures (8.1.0)
+  - Hyperspace (4.0.0):
+    - Hyperspace/Core (= 4.0.0)
+  - Hyperspace/Core (4.0.0)
+  - KeychainSwift (20.0.0)
+  - lottie-ios (3.3.0)
+  - Plaid (3.0.0)
+  - SwiftProtobuf (1.19.0)
+  - TrustWalletCore (2.3.9):
+    - TrustWalletCore/Core (= 2.3.9)
+  - TrustWalletCore/Core (2.3.9):
+    - TrustWalletCore/Types
+  - TrustWalletCore/Types (2.3.9):
+    - SwiftProtobuf
+
+DEPENDENCIES:
+  - BigInt (~> 5.2.0)
+  - BrightFutures
+  - Hyperspace
+  - KeychainSwift (~> 20.0)
+  - lottie-ios
+  - Plaid
+  - TrustWalletCore (~> 2.3.9)
+
+SPEC REPOS:
+  trunk:
+    - BigInt
+    - BrightFutures
+    - Hyperspace
+    - KeychainSwift
+    - lottie-ios
+    - Plaid
+    - SwiftProtobuf
+    - TrustWalletCore
+
+SPEC CHECKSUMS:
+  BigInt: f668a80089607f521586bbe29513d708491ef2f7
+  BrightFutures: 6a974d08b121658dc0e6b93f5dec5353f9c24a44
+  Hyperspace: 57606f05e35a8da81e679c3408b7a94fd02bf060
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  Plaid: 673a49f093b4c44f9ff84b8bc219243a68ce4f3b
+  SwiftProtobuf: 6ef3f0e422ef90d6605ca20b21a94f6c1324d6b3
+  TrustWalletCore: efe1c8cedc01621bfe5e89557f2e8d1ef35450f0
+
+PODFILE CHECKSUM: 53a43a1f9fa75bf6741ae859907a73e0189b0548
+
+COCOAPODS: 1.11.3

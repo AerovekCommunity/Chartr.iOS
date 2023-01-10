@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Wallet View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UserWallet" id="Y6W-OH-hqX" customClass="UserWalletViewController" customModule="Chartr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$AERO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwA-mu-t4h" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="124" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chartrColorIB" value="textRegular"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zz1-FR-hFR" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="152" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="headlineBold"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chartrColorIB" value="aeroBlue"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwB-Zy-qad" customClass="ChartrButton" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="831" width="163" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="1IU-PQ-ENg"/>
+                                    <constraint firstAttribute="width" constant="163" id="xHu-4z-3Sq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.up" catalog="system" title="Send"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonStyleIB" value="primary"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="nrt-vp-abB" kind="show" id="qI9-0J-C9a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBB-6e-ZZ3" customClass="ChartrButton" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="232" y="831" width="160" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="R4x-O2-RRa"/>
+                                    <constraint firstAttribute="height" constant="31" id="Rva-1R-x8h"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.down" catalog="system" title="Receive"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonStyleIB" value="secondary"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Rb7-Vl-efd" kind="presentation" id="wTC-CG-f0s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$EGLD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaD-Km-646" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="225" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chartrColorIB" value="textRegular"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8Y-OM-wgD" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="253" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="headlineBold"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chartrColorIB" value="aeroBlue"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGk-dc-a1M" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="309" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="headline"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vQx-fv-gdz">
+                                <rect key="frame" x="20" y="338" width="374" height="485"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zz1-FR-hFR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="0dn-Z5-r4v"/>
+                            <constraint firstItem="GwA-mu-t4h" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="0qj-AW-BZB"/>
+                            <constraint firstItem="cwB-Zy-qad" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="6xR-7a-fKB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oaD-Km-646" secondAttribute="trailing" constant="20" id="87n-i7-OmA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vQx-fv-gdz" secondAttribute="trailing" constant="20" id="8Tl-9f-tXW"/>
+                            <constraint firstItem="X8Y-OM-wgD" firstAttribute="top" secondItem="oaD-Km-646" secondAttribute="bottom" constant="7.5" id="8nw-7a-ZUc"/>
+                            <constraint firstItem="qGk-dc-a1M" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="9nX-mz-bHr"/>
+                            <constraint firstItem="cwB-Zy-qad" firstAttribute="top" secondItem="vQx-fv-gdz" secondAttribute="bottom" constant="8" symbolic="YES" id="CGD-fx-wxz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qGk-dc-a1M" secondAttribute="trailing" constant="20" id="DbS-2P-4OH"/>
+                            <constraint firstItem="oaD-Km-646" firstAttribute="top" secondItem="zz1-FR-hFR" secondAttribute="bottom" constant="52" id="EH6-b2-DLh"/>
+                            <constraint firstItem="qGk-dc-a1M" firstAttribute="top" secondItem="X8Y-OM-wgD" secondAttribute="bottom" constant="35" id="N5G-fZ-iqj"/>
+                            <constraint firstItem="zz1-FR-hFR" firstAttribute="top" secondItem="GwA-mu-t4h" secondAttribute="bottom" constant="7.5" id="NWv-i6-6l8"/>
+                            <constraint firstItem="vQx-fv-gdz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Rwg-Ot-dMG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GwA-mu-t4h" secondAttribute="trailing" constant="20" id="Sl8-mZ-FDf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="X8Y-OM-wgD" secondAttribute="trailing" constant="20" id="SoR-bQ-a7e"/>
+                            <constraint firstItem="TBB-6e-ZZ3" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="SpD-kf-0Bs"/>
+                            <constraint firstItem="oaD-Km-646" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="X3B-hg-0o5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TBB-6e-ZZ3" secondAttribute="trailing" constant="22" id="beu-cW-4bL"/>
+                            <constraint firstItem="cwB-Zy-qad" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="d1N-tU-fXd"/>
+                            <constraint firstItem="X8Y-OM-wgD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="oXR-PV-b4L"/>
+                            <constraint firstItem="vQx-fv-gdz" firstAttribute="top" secondItem="qGk-dc-a1M" secondAttribute="bottom" constant="8" symbolic="YES" id="tih-HH-NA3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zz1-FR-hFR" secondAttribute="trailing" constant="20" id="uww-Tz-tc4"/>
+                            <constraint firstItem="GwA-mu-t4h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="xC5-mQ-DbZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="balanceLabel" destination="zz1-FR-hFR" id="VAA-Qh-ans"/>
+                        <outlet property="egldBalanceLabel" destination="X8Y-OM-wgD" id="SD0-2Y-Uos"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </scene>
+        <!--Receive Aero View Controller-->
+        <scene sceneID="oy9-iB-Lxd">
+            <objects>
+                <viewController id="Rb7-Vl-efd" customClass="ReceiveAeroViewController" customModule="Chartr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LmG-ks-i0M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mvd-gk-SyN">
+                                <rect key="frame" x="107" y="150.5" width="200" height="200"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PYu-ym-Yvm"/>
+                                    <constraint firstAttribute="height" constant="201.5" id="rBf-tf-AMD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="erd1....." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kw5-qH-4aq" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="359" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="body"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chartrColorIB" value="black"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckD-cd-wOu" customClass="ChartrButton" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="426" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Uq6-7c-W4p"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Copy"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonStyleIB" value="link"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="copyTapped:" destination="Rb7-Vl-efd" eventType="touchUpInside" id="WuB-gB-S6j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oal-6f-DXF"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mvd-gk-SyN" firstAttribute="leading" secondItem="oal-6f-DXF" secondAttribute="leading" constant="107" id="5mG-tw-RLh"/>
+                            <constraint firstItem="oal-6f-DXF" firstAttribute="trailing" secondItem="mvd-gk-SyN" secondAttribute="trailing" constant="107" id="EaI-Aq-9sa"/>
+                            <constraint firstItem="oal-6f-DXF" firstAttribute="trailing" secondItem="ckD-cd-wOu" secondAttribute="trailing" constant="20" id="YUa-aw-V8l"/>
+                            <constraint firstItem="kw5-qH-4aq" firstAttribute="top" secondItem="mvd-gk-SyN" secondAttribute="bottom" constant="7.5" id="gqp-DH-66u"/>
+                            <constraint firstItem="mvd-gk-SyN" firstAttribute="top" secondItem="oal-6f-DXF" secondAttribute="top" constant="106" id="k3q-Y6-tEa"/>
+                            <constraint firstItem="ckD-cd-wOu" firstAttribute="top" secondItem="kw5-qH-4aq" secondAttribute="bottom" constant="46.5" id="qbb-Ng-XrF"/>
+                            <constraint firstItem="kw5-qH-4aq" firstAttribute="leading" secondItem="oal-6f-DXF" secondAttribute="leading" constant="20" id="t4d-yo-l9h"/>
+                            <constraint firstItem="ckD-cd-wOu" firstAttribute="leading" secondItem="oal-6f-DXF" secondAttribute="leading" constant="20" id="vf6-cI-9kV"/>
+                            <constraint firstItem="oal-6f-DXF" firstAttribute="trailing" secondItem="kw5-qH-4aq" secondAttribute="trailing" constant="20" id="xaW-y6-tAs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressQrImage" destination="mvd-gk-SyN" id="AxI-5u-BLp"/>
+                        <outlet property="copyButton" destination="ckD-cd-wOu" id="pZo-Ns-a0g"/>
+                        <outlet property="walletAddress" destination="kw5-qH-4aq" id="v5S-QN-zq2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bfe-cL-7wR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="-143"/>
+        </scene>
+        <!--Send Aero View Controller-->
+        <scene sceneID="Ajb-Gf-wrF">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="nrt-vp-abB" customClass="SendAeroViewController" customModule="Chartr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tmM-Q6-flz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOV-gF-mS9" customClass="ChartrButton" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="831" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="MYl-Lw-3cl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Continue"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonStyleIB" value="primary"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueTapped:" destination="nrt-vp-abB" eventType="touchUpInside" id="xrL-0z-AoF"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="--" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2jK-ua-RW0">
+                                <rect key="frame" x="102" y="145" width="210" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kAw-8e-Nnt">
+                                <rect key="frame" x="20" y="44" width="374" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="AERO"/>
+                                    <segment title="EGLD"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="AccentColor"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJq-8O-pw7" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="116" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dxg-ve-cRz">
+                                <rect key="frame" x="20" y="265" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartQuotesType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwB-k5-76z" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="236" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="body"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4GK-5h-3Gf">
+                                <rect key="frame" x="362" y="266.5" width="32" height="30.5"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="0Yx-yq-A9n"/>
+                                    <constraint firstAttribute="width" constant="32" id="Oy4-Di-Z9c"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uLX-i0-jAa"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WJq-8O-pw7" firstAttribute="leading" secondItem="uLX-i0-jAa" secondAttribute="leading" constant="20" id="3w5-7t-98B"/>
+                            <constraint firstItem="uLX-i0-jAa" firstAttribute="trailing" secondItem="2jK-ua-RW0" secondAttribute="trailing" constant="102" id="8Ot-uz-Gh3"/>
+                            <constraint firstItem="uLX-i0-jAa" firstAttribute="trailing" secondItem="SwB-k5-76z" secondAttribute="trailing" constant="20" id="8hj-nG-rgk"/>
+                            <constraint firstItem="kOV-gF-mS9" firstAttribute="leading" secondItem="uLX-i0-jAa" secondAttribute="leading" constant="20" id="CBO-5Q-DK0"/>
+                            <constraint firstItem="kAw-8e-Nnt" firstAttribute="leading" secondItem="uLX-i0-jAa" secondAttribute="leading" constant="20" id="FDR-Jq-rLu"/>
+                            <constraint firstItem="SwB-k5-76z" firstAttribute="leading" secondItem="uLX-i0-jAa" secondAttribute="leading" constant="20" id="FHl-ek-bMb"/>
+                            <constraint firstItem="uLX-i0-jAa" firstAttribute="trailing" secondItem="kAw-8e-Nnt" secondAttribute="trailing" constant="20" id="H0b-gf-Fvp"/>
+                            <constraint firstItem="4GK-5h-3Gf" firstAttribute="top" secondItem="SwB-k5-76z" secondAttribute="bottom" constant="9" id="HCw-xj-1rj"/>
+                            <constraint firstItem="Dxg-ve-cRz" firstAttribute="top" secondItem="SwB-k5-76z" secondAttribute="bottom" constant="8" symbolic="YES" id="HTS-Zv-QC9"/>
+                            <constraint firstItem="uLX-i0-jAa" firstAttribute="trailing" secondItem="WJq-8O-pw7" secondAttribute="trailing" constant="20" id="KLh-Af-30b"/>
+                            <constraint firstItem="kOV-gF-mS9" firstAttribute="bottom" secondItem="uLX-i0-jAa" secondAttribute="bottom" id="MJu-Q7-fZN"/>
+                            <constraint firstItem="2jK-ua-RW0" firstAttribute="leading" secondItem="uLX-i0-jAa" secondAttribute="leading" constant="102" id="TTI-jM-bqO"/>
+                            <constraint firstItem="Dxg-ve-cRz" firstAttribute="leading" secondItem="uLX-i0-jAa" secondAttribute="leading" constant="20" id="V7G-ov-Tdi"/>
+                            <constraint firstItem="uLX-i0-jAa" firstAttribute="trailing" secondItem="kOV-gF-mS9" secondAttribute="trailing" constant="20" id="XXN-eT-Lbd"/>
+                            <constraint firstItem="2jK-ua-RW0" firstAttribute="top" secondItem="WJq-8O-pw7" secondAttribute="bottom" constant="8" symbolic="YES" id="a5W-Ne-Ruf"/>
+                            <constraint firstItem="SwB-k5-76z" firstAttribute="top" secondItem="2jK-ua-RW0" secondAttribute="bottom" constant="57" id="esK-Tf-QBr"/>
+                            <constraint firstItem="uLX-i0-jAa" firstAttribute="trailing" secondItem="4GK-5h-3Gf" secondAttribute="trailing" constant="20" id="jqY-rn-IKq"/>
+                            <constraint firstItem="4GK-5h-3Gf" firstAttribute="leading" secondItem="Dxg-ve-cRz" secondAttribute="trailing" constant="8" symbolic="YES" id="u98-vQ-b7s"/>
+                            <constraint firstItem="kAw-8e-Nnt" firstAttribute="top" secondItem="uLX-i0-jAa" secondAttribute="top" id="wDt-3n-Eay"/>
+                            <constraint firstItem="WJq-8O-pw7" firstAttribute="top" secondItem="kAw-8e-Nnt" secondAttribute="bottom" constant="41" id="y5M-DN-hDn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XIt-4Y-OfG"/>
+                    <connections>
+                        <outlet property="amountTextView" destination="2jK-ua-RW0" id="wHG-G3-21k"/>
+                        <outlet property="continueButton" destination="kOV-gF-mS9" id="K7N-my-emP"/>
+                        <outlet property="qrcodeImage" destination="4GK-5h-3Gf" id="fE4-tY-bEV"/>
+                        <outlet property="segmentedControl" destination="kAw-8e-Nnt" id="VtY-jq-FBg"/>
+                        <outlet property="sendToAddressTextField" destination="Dxg-ve-cRz" id="uio-ru-MXX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Meq-Vt-JpE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5652173913045" y="687.72321428571422"/>
+        </scene>
+        <!--Verify Send View Controller-->
+        <scene sceneID="pC2-gI-hwK">
+            <objects>
+                <viewController storyboardIdentifier="VerifySend" id="z2d-iU-j7u" customClass="VerifySendViewController" customModule="Chartr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eRL-EW-lqL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i66-nl-vTd" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="100" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l09-Xk-QYW" customClass="ChartrButton" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="831" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="hUy-8P-lfJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonStyleIB" value="primary"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendButtonTapped:" destination="z2d-iU-j7u" eventType="touchUpInside" id="hUP-1e-qr9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIN required to send" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKJ-10-NSL" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="802" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="tiny"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chartrColorIB" value="disabledGrey"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="erd1x0mufyq9k4d502am67tkqrfpmul0vssuxnwzt4nun0tpc9rfcezqm7nk9m" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttv-ck-TdK" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="129" width="374" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="GWf-ly-wmk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="tiny"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chartrColorIB" value="textRegular"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 AERO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6G-jn-VJD" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="259" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="body"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgN-pR-xwt" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="230" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c03-TG-fJm"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RgN-pR-xwt" firstAttribute="leading" secondItem="c03-TG-fJm" secondAttribute="leading" constant="20" id="2Ru-Tr-fsH"/>
+                            <constraint firstItem="i66-nl-vTd" firstAttribute="leading" secondItem="c03-TG-fJm" secondAttribute="leading" constant="20" id="3Rr-qG-E5r"/>
+                            <constraint firstItem="c03-TG-fJm" firstAttribute="trailing" secondItem="RgN-pR-xwt" secondAttribute="trailing" constant="20" id="4lr-KA-ae4"/>
+                            <constraint firstItem="l09-Xk-QYW" firstAttribute="bottom" secondItem="c03-TG-fJm" secondAttribute="bottom" id="6Df-73-s12"/>
+                            <constraint firstItem="c03-TG-fJm" firstAttribute="trailing" secondItem="qKJ-10-NSL" secondAttribute="trailing" constant="20" id="7jf-Rd-j4v"/>
+                            <constraint firstItem="c03-TG-fJm" firstAttribute="trailing" secondItem="i66-nl-vTd" secondAttribute="trailing" constant="20" id="AjB-YG-joQ"/>
+                            <constraint firstItem="c03-TG-fJm" firstAttribute="trailing" secondItem="ttv-ck-TdK" secondAttribute="trailing" constant="20" id="BjI-Z2-CyL"/>
+                            <constraint firstItem="l09-Xk-QYW" firstAttribute="top" secondItem="qKJ-10-NSL" secondAttribute="bottom" constant="8" symbolic="YES" id="CGX-Nu-aEp"/>
+                            <constraint firstItem="Z6G-jn-VJD" firstAttribute="top" secondItem="RgN-pR-xwt" secondAttribute="bottom" constant="8" symbolic="YES" id="EVs-A9-7b5"/>
+                            <constraint firstItem="qKJ-10-NSL" firstAttribute="leading" secondItem="c03-TG-fJm" secondAttribute="leading" constant="20" id="Fi6-QD-mrP"/>
+                            <constraint firstItem="Z6G-jn-VJD" firstAttribute="leading" secondItem="c03-TG-fJm" secondAttribute="leading" constant="20" id="ReW-F9-SQ2"/>
+                            <constraint firstItem="c03-TG-fJm" firstAttribute="trailing" secondItem="Z6G-jn-VJD" secondAttribute="trailing" constant="20" id="XBk-Q1-ksW"/>
+                            <constraint firstItem="ttv-ck-TdK" firstAttribute="leading" secondItem="c03-TG-fJm" secondAttribute="leading" constant="20" id="cgD-me-SrC"/>
+                            <constraint firstItem="ttv-ck-TdK" firstAttribute="top" secondItem="i66-nl-vTd" secondAttribute="bottom" constant="8" symbolic="YES" id="iMD-MR-meI"/>
+                            <constraint firstItem="RgN-pR-xwt" firstAttribute="top" secondItem="ttv-ck-TdK" secondAttribute="bottom" constant="44" id="lY2-tC-0r7"/>
+                            <constraint firstItem="i66-nl-vTd" firstAttribute="top" secondItem="c03-TG-fJm" secondAttribute="top" constant="56" id="nUb-bW-sp1"/>
+                            <constraint firstItem="c03-TG-fJm" firstAttribute="trailing" secondItem="l09-Xk-QYW" secondAttribute="trailing" constant="20" id="xA9-sW-uW6"/>
+                            <constraint firstItem="l09-Xk-QYW" firstAttribute="leading" secondItem="c03-TG-fJm" secondAttribute="leading" constant="20" id="zhY-4a-KIs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="ttv-ck-TdK" id="SLW-qf-W8P"/>
+                        <outlet property="amountLabel" destination="Z6G-jn-VJD" id="iK8-d2-7Ps"/>
+                        <outlet property="sendButton" destination="l09-Xk-QYW" id="pCx-ye-YTu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ti8-Ao-zXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.072463768116" y="687.72321428571422"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="GwA-mu-t4h">
+            <size key="intrinsicContentSize" width="54.5" height="20.5"/>
+        </designable>
+        <designable name="RgN-pR-xwt">
+            <size key="intrinsicContentSize" width="60" height="20.5"/>
+        </designable>
+        <designable name="SwB-k5-76z">
+            <size key="intrinsicContentSize" width="59" height="20.5"/>
+        </designable>
+        <designable name="TBB-6e-ZZ3">
+            <size key="intrinsicContentSize" width="93" height="31"/>
+        </designable>
+        <designable name="WJq-8O-pw7">
+            <size key="intrinsicContentSize" width="104.5" height="20.5"/>
+        </designable>
+        <designable name="X8Y-OM-wgD">
+            <size key="intrinsicContentSize" width="69.5" height="20.5"/>
+        </designable>
+        <designable name="Z6G-jn-VJD">
+            <size key="intrinsicContentSize" width="59" height="20.5"/>
+        </designable>
+        <designable name="ckD-cd-wOu">
+            <size key="intrinsicContentSize" width="58" height="31"/>
+        </designable>
+        <designable name="cwB-Zy-qad">
+            <size key="intrinsicContentSize" width="76" height="31"/>
+        </designable>
+        <designable name="i66-nl-vTd">
+            <size key="intrinsicContentSize" width="82" height="20.5"/>
+        </designable>
+        <designable name="kOV-gF-mS9">
+            <size key="intrinsicContentSize" width="82.5" height="31"/>
+        </designable>
+        <designable name="kw5-qH-4aq">
+            <size key="intrinsicContentSize" width="55.5" height="20.5"/>
+        </designable>
+        <designable name="l09-Xk-QYW">
+            <size key="intrinsicContentSize" width="57.5" height="31"/>
+        </designable>
+        <designable name="oaD-Km-646">
+            <size key="intrinsicContentSize" width="53.5" height="20.5"/>
+        </designable>
+        <designable name="qGk-dc-a1M">
+            <size key="intrinsicContentSize" width="97.5" height="20.5"/>
+        </designable>
+        <designable name="qKJ-10-NSL">
+            <size key="intrinsicContentSize" width="156" height="20.5"/>
+        </designable>
+        <designable name="ttv-ck-TdK">
+            <size key="intrinsicContentSize" width="574.5" height="20.5"/>
+        </designable>
+        <designable name="zz1-FR-hFR">
+            <size key="intrinsicContentSize" width="69.5" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrow.down" catalog="system" width="120" height="128"/>
+        <image name="arrow.up" catalog="system" width="120" height="128"/>
+        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

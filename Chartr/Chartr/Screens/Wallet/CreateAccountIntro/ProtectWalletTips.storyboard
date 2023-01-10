@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zux-rR-EQk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CVs-W1-1eE">
+            <objects>
+                <viewController storyboardIdentifier="KeyToAccountInfo" id="4Us-01-BRU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nhQ-vh-MMv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IOG-B6-RmS">
+                                <rect key="frame" x="107" y="99.5" width="200" height="203"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="qA7-KT-j3v"/>
+                                    <constraint firstAttribute="height" constant="200" id="zNT-r9-A1I"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recovery phrase is your key" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rI8-zw-2y5" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="383" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="u79-vN-fKo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="headline"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYM-fr-RLp" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="432" width="374" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="tpA-4v-GbU"/>
+                                </constraints>
+                                <string key="text">Your recovery phrase is the key to your wallet in case you forget your PIN.  Blockchains do not have a "Reset Password" feature so if you lose your secret phrase you risk losing all your assets and other data associated with this account.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="body"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gwc-v3-mgu"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gwc-v3-mgu" firstAttribute="trailing" secondItem="rI8-zw-2y5" secondAttribute="trailing" constant="20" id="3nd-rS-giQ"/>
+                            <constraint firstItem="rI8-zw-2y5" firstAttribute="top" secondItem="IOG-B6-RmS" secondAttribute="bottom" constant="82" id="9Fb-UW-4Lu"/>
+                            <constraint firstItem="rI8-zw-2y5" firstAttribute="leading" secondItem="gwc-v3-mgu" secondAttribute="leading" constant="20" id="CUE-tq-CuK"/>
+                            <constraint firstItem="BYM-fr-RLp" firstAttribute="leading" secondItem="gwc-v3-mgu" secondAttribute="leading" constant="20" id="JA0-ee-1od"/>
+                            <constraint firstItem="BYM-fr-RLp" firstAttribute="top" secondItem="rI8-zw-2y5" secondAttribute="bottom" constant="8" id="O3q-en-mvx"/>
+                            <constraint firstItem="gwc-v3-mgu" firstAttribute="trailing" secondItem="BYM-fr-RLp" secondAttribute="trailing" constant="20" id="biG-Go-WKp"/>
+                            <constraint firstItem="IOG-B6-RmS" firstAttribute="leading" secondItem="gwc-v3-mgu" secondAttribute="leading" constant="107" id="fSa-Sy-xDp"/>
+                            <constraint firstItem="IOG-B6-RmS" firstAttribute="top" secondItem="gwc-v3-mgu" secondAttribute="top" constant="57" id="mZN-Pe-6FF"/>
+                            <constraint firstItem="gwc-v3-mgu" firstAttribute="trailing" secondItem="IOG-B6-RmS" secondAttribute="trailing" constant="107" id="sQ2-ff-Lne"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIE-xy-51I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-878.26086956521749" y="806.91964285714278"/>
+        </scene>
+        <!--Keep Phrase Safe View Controller-->
+        <scene sceneID="PLz-9s-hdA">
+            <objects>
+                <viewController storyboardIdentifier="KeepPhraseSafeInfo" id="cCm-DV-hKR" customClass="KeepPhraseSafeViewController" customModule="Chartr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PFc-fS-Eou">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.shield" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a4W-CU-fgV">
+                                <rect key="frame" x="107" y="100" width="200" height="199"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Fxr-Gq-evl"/>
+                                    <constraint firstAttribute="height" constant="200" id="ZTQ-MX-vz0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep your phrase safe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dt-64-TYg" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="383" width="374" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="5jW-cs-U0A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="headline"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4w-nr-cN6" customClass="ChartrLabel" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="424" width="374" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="0yr-dH-a7d"/>
+                                </constraints>
+                                <string key="text">Do not share your secret phrase with anyone.  Keep it in a secure place where you can only access it. Chartr does not have access to it so we cannot reset it for you. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleIB" value="body"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvl-qu-2Zh" customClass="ChartrButton" customModule="Chartr" customModuleProvider="target">
+                                <rect key="frame" x="20" y="831" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="vun-gz-HCE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Continue"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonStyleIB" value="primary"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueButtonTapped:" destination="cCm-DV-hKR" eventType="touchUpInside" id="jwF-Cm-dCd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are ready to backup your recovery phrase proceed to the next screen" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeJ-Y4-YtK">
+                                <rect key="frame" x="52" y="789" width="342" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="We7-Pd-U0B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6lG-lF-nbo">
+                                <rect key="frame" x="20" y="797" width="24" height="22"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="8Zv-f9-XxB"/>
+                                    <constraint firstAttribute="width" constant="24" id="Z2n-TA-dhH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Js8-dc-LDa"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HeJ-Y4-YtK" firstAttribute="leading" secondItem="6lG-lF-nbo" secondAttribute="trailing" constant="8" symbolic="YES" id="1FQ-MT-5dG"/>
+                            <constraint firstItem="r4w-nr-cN6" firstAttribute="leading" secondItem="Js8-dc-LDa" secondAttribute="leading" constant="20" id="42t-JD-Ja9"/>
+                            <constraint firstItem="Js8-dc-LDa" firstAttribute="trailing" secondItem="r4w-nr-cN6" secondAttribute="trailing" constant="20" id="7br-P0-J0P"/>
+                            <constraint firstItem="qvl-qu-2Zh" firstAttribute="leading" secondItem="Js8-dc-LDa" secondAttribute="leading" constant="20" id="Bh5-KK-FAS"/>
+                            <constraint firstItem="8dt-64-TYg" firstAttribute="top" secondItem="a4W-CU-fgV" secondAttribute="bottom" constant="83.5" id="E3D-ff-lVa"/>
+                            <constraint firstItem="qvl-qu-2Zh" firstAttribute="top" secondItem="6lG-lF-nbo" secondAttribute="bottom" constant="11" id="Gdm-1O-avz"/>
+                            <constraint firstItem="8dt-64-TYg" firstAttribute="leading" secondItem="Js8-dc-LDa" secondAttribute="leading" constant="20" id="K2T-3w-4cA"/>
+                            <constraint firstItem="qvl-qu-2Zh" firstAttribute="bottom" secondItem="Js8-dc-LDa" secondAttribute="bottom" id="LTh-6l-CiN"/>
+                            <constraint firstItem="a4W-CU-fgV" firstAttribute="leading" secondItem="Js8-dc-LDa" secondAttribute="leading" constant="107" id="QTV-ct-RPR"/>
+                            <constraint firstItem="r4w-nr-cN6" firstAttribute="top" secondItem="8dt-64-TYg" secondAttribute="bottom" constant="8" id="QyP-Fk-ecg"/>
+                            <constraint firstItem="Js8-dc-LDa" firstAttribute="trailing" secondItem="qvl-qu-2Zh" secondAttribute="trailing" constant="20" id="aty-eh-bp6"/>
+                            <constraint firstItem="Js8-dc-LDa" firstAttribute="trailing" secondItem="8dt-64-TYg" secondAttribute="trailing" constant="20" id="cWB-Cu-VYs"/>
+                            <constraint firstItem="Js8-dc-LDa" firstAttribute="trailing" secondItem="a4W-CU-fgV" secondAttribute="trailing" constant="107" id="dv5-sj-31L"/>
+                            <constraint firstItem="qvl-qu-2Zh" firstAttribute="top" secondItem="HeJ-Y4-YtK" secondAttribute="bottom" constant="3" id="j7T-nP-QiB"/>
+                            <constraint firstItem="Js8-dc-LDa" firstAttribute="trailing" secondItem="HeJ-Y4-YtK" secondAttribute="trailing" constant="20" id="obD-nX-XzJ"/>
+                            <constraint firstItem="6lG-lF-nbo" firstAttribute="leading" secondItem="Js8-dc-LDa" secondAttribute="leading" constant="20" id="tza-Ly-UfP"/>
+                            <constraint firstItem="a4W-CU-fgV" firstAttribute="top" secondItem="Js8-dc-LDa" secondAttribute="top" constant="55.5" id="zAV-Eu-sA3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="qvl-qu-2Zh" id="Qtr-Zq-Mqn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FxX-nA-3Oc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-171.01449275362319" y="806.91964285714278"/>
+        </scene>
+        <!--Protect Wallet Tips View Controller-->
+        <scene sceneID="Wkk-sb-56Z">
+            <objects>
+                <pageViewController storyboardIdentifier="ProtectWalletTips" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="zux-rR-EQk" customClass="ProtectWalletTipsViewController" customModule="Chartr" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QEB-UJ-n00" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="91"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="8dt-64-TYg">
+            <size key="intrinsicContentSize" width="170" height="20.5"/>
+        </designable>
+        <designable name="BYM-fr-RLp">
+            <size key="intrinsicContentSize" width="1778.5" height="20.5"/>
+        </designable>
+        <designable name="qvl-qu-2Zh">
+            <size key="intrinsicContentSize" width="82.5" height="31"/>
+        </designable>
+        <designable name="r4w-nr-cN6">
+            <size key="intrinsicContentSize" width="1247" height="20.5"/>
+        </designable>
+        <designable name="rI8-zw-2y5">
+            <size key="intrinsicContentSize" width="213" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
+        <image name="key" catalog="system" width="86" height="128"/>
+        <image name="lock.shield" catalog="system" width="128" height="118"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

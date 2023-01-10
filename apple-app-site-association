@@ -1,0 +1,19 @@
+{
+    "applinks": {
+      "details": [
+           {
+             "appIDs": [ "54PDZHFTDX.com.aerovek.chartr" ],
+             "components": [
+               {
+                  "/": "/link/oauth/a2a-redirect.html",
+                  "comment": "Entry for Link"
+               },
+               {
+                  "/": "/link/oauth/a2a-redirect",
+                  "comment": "Entry for Link"
+               }
+             ]
+           }
+       ]
+   }
+}

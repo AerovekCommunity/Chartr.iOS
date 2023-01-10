@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Chartr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fU6-KU-Phj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </mapView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRN-w5-Tr3">
+                                <rect key="frame" x="0.0" y="813" width="414" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="search" id="yi2-xQ-RLG"/>
+                                    <tabBarItem tag="1" title="Wallet" image="dollarsign.circle" catalog="system" id="qio-k9-koU"/>
+                                    <tabBarItem tag="2" title="Logs" image="doc.text" catalog="system" id="hBs-4a-fnf"/>
+                                    <tabBarItem tag="3" title="Settings" image="gearshape" catalog="system" id="kte-Ry-pXj"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="zwN-Nb-Vui"/>
+                                </connections>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fU6-KU-Phj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6kD-K7-5LQ"/>
+                            <constraint firstAttribute="bottom" secondItem="LRN-w5-Tr3" secondAttribute="bottom" id="BTd-fk-7ec"/>
+                            <constraint firstItem="fU6-KU-Phj" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Gip-NP-iNf"/>
+                            <constraint firstItem="LRN-w5-Tr3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="YZZ-rG-qci"/>
+                            <constraint firstItem="fU6-KU-Phj" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="lkS-ZE-GXD"/>
+                            <constraint firstItem="LRN-w5-Tr3" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="sS5-kT-SIZ"/>
+                            <constraint firstItem="LRN-w5-Tr3" firstAttribute="top" secondItem="fU6-KU-Phj" secondAttribute="bottom" id="uZC-qF-tbu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="fU6-KU-Phj" id="6Iq-aT-CTY"/>
+                        <outlet property="tab1" destination="yi2-xQ-RLG" id="aBe-xx-pQm"/>
+                        <outlet property="tab2" destination="hBs-4a-fnf" id="c2X-e2-smm"/>
+                        <outlet property="tab3" destination="qio-k9-koU" id="oil-6A-9kI"/>
+                        <outlet property="tab4" destination="kte-Ry-pXj" id="gOa-Jm-hPC"/>
+                        <outlet property="tabBar" destination="LRN-w5-Tr3" id="T5P-ae-ZvF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc.text" catalog="system" width="115" height="128"/>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
