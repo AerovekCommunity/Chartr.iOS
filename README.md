@@ -21,20 +21,24 @@ Then in the AeroDAO Telegram channel ask to be added as a contributor and provid
 
 ## **Submitting Code Changes**
 1. Create an issue describing the bugfix or feature you plan to work on, or if one exists already that you want to work on just assign yourself to it.
-2. Create a branch off of `main` and name it something that describes the issue. First make sure your main branch is up to date
+2. Clone the repo
+```
+git clone https://github.com/AerovekCommunity/Chartr.iOS.git
+```
+3. Create a branch off of `main` and name it something that describes the issue. First make sure your main branch is up to date
     ```
     git checkout main
     git pull
     git checkout -b your-branch-name
     ```
-3. Do the work in that branch and commit and push to remote when ready
+4. Do the work in that branch and commit and push to remote when ready
     ```
     git add . 
     git commit -m "your commit notes"
     git push origin your-branch-name
     ```
-4. Create a pull request from your branch into main and ask a core contributor to review it
-5. Once the pull request is approved you can merge your branch into main
+5. Create a pull request from your branch into main and ask a core contributor to review it
+6. Once the pull request is approved you can merge your branch into main
 
 You can also join our Telegram and Discord channels and ask questions there. 
 
