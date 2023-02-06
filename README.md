@@ -11,6 +11,16 @@ Aviation on the Blockchain
 
 Refer to the [Developer Guide](./docs/DEVELOPER_GUIDE.md) to get an idea how the app was structured, and how to build and package the app.
 
+## Downloading the beta version
+The beta app is useful in case you are not a developer and would like to contribute by playing with the app and proposing new features or reporting bugs that you find. Keep in mind that it is not going to be the latest version. If you'd like to request a new beta build, please create a issue ticket for that.
+
+If you'd like to have access to the beta version please follow these steps
+- Request access by [creating a new issue](https://github.com/AerovekCommunity/Chartr.iOS/issues)
+- Title it "Requesting beta access"
+- In the comment section add your email address associated with your Apple ID you use on your phone
+- Download the TestFlight app on your iPhone. See this [getting starting](https://testflight.apple.com/) guide for details.
+- You will get an invitation email with a code. Open the TestFlight app and redeem that code and you should see the Chartr app available to download.
+
 ## Contributing
 
 All work done on the Chartr app happens directly on [GitHub](https://github.com/AerovekCommunity/Chartr.iOS). Both core team members and external contributors send pull requests which go through the same review process.
